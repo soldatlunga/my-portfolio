@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Jane Developer</title>
+    <meta name="description" content="Front-end developer portfolio with projects and contact">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle" aria-label="Switch dark/light mode">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Hi, I'm Jane Developer</h1>
+            <p>I build accessible, responsive websites with clean code.</p>
+            <img src="https://via.placeholder.com/150?text=Jane" alt="Jane Developer profile picture smiling">
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Weather App</h3>
+                    <img src="https://via.placeholder.com/300x150?text=Weather+App" alt="Weather app showing sunny 72°F">
+                    <p>Real-time weather using API.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Task Manager</h3>
+                    <img src="https://via.placeholder.com/300x150?text=Task+Manager" alt="Task manager with drag-and-drop">
+                    <p>Organize tasks with local storage.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required aria-required="true">
+                
+                <label for="msg">Message:</label>
+                <textarea id="msg" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <p id="formFeedback" style="display:none;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Jane Developer – Accessible & responsive</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

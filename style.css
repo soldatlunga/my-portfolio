@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f5f5fa;
+    color: #1a1a2e;
+    transition: 0.3s;
+    padding: 1rem;
+}
+
+body.dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+#themeToggle {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.project-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark .project-card {
+    background: #1e1e2a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    font-family: inherit;
+}
+
+button {
+    background: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark button {
+    background: #e0e0e0;
+    color: #1a1a2e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .project-grid {
+        flex-direction: column;
+    }
+}
